@@ -14,8 +14,8 @@ app.get("/", function(req, res) {
         console.log(res.statusCode);
         response.on("data", function(data) {
             console.log(data);
-            // const liveCases = JSON.parse(data)
-            // console.log(liveCases)
+            const liveCases = JSON.parse(data)
+            console.log(liveCases)
         })
     })
     res.render("livecases");
