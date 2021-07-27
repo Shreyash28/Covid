@@ -27,8 +27,8 @@ app.get("/", function(req, res) {
         var ACase = response.data.total_values.active
         var DCase = response.data.total_values.deaths
         var RCase = response.data.total_values.recovered
-        var stateList = response.data.state_wise;
-        res.send(stateList);
+        var statelist = response.data.state_wise;
+        res.send(statelist);
 
         res.render("livecases", {
             Confirmed: CCase,
