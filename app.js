@@ -5,6 +5,7 @@ const bodyParser = require("body-parser");
 const app = express();
 
 
+
 app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -35,7 +36,7 @@ app.get("/", function(req, res) {
             Active: ACase,
             Deceased: DCase,
             Recovered: RCase,
-            // StateWise: state
+
         });
     }).catch(function(error) {
         console.error(error);
