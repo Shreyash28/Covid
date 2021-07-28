@@ -39,22 +39,20 @@ app.get("/", function(req, res) {
             var states = `${property}`;
             Case.push(states)
         }
-
-        Case.forEach(function(item) {
-            console.log(statelist.item)
-
-        });
+        console.log(Case)
 
 
-        res.render("livecases", {
-            Confirmed: CCase,
-            Active: ACase,
-            Deceased: DCase,
-            Recovered: RCase,
-            Statelist: Case,
-            ActiveCase: ActiveCaseStateWise
 
-        });
+
+        // res.render("livecases", {
+        //     Confirmed: CCase,
+        //     Active: ACase,
+        //     Deceased: DCase,
+        //     Recovered: RCase,
+        //     Statelist: Case,
+        //     ActiveCase: ActiveCaseStateWise
+
+        // });
 
 
     });
