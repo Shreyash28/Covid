@@ -10,7 +10,12 @@ app.use(express.static("public"));
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.get("/", function(req, res) {
+app.get("/", function(request, response) {
+    response.render("index");
+
+});
+
+app.get("/tracker", function(req, res) {
     var axios = require("axios").default;
 
     var options = {
@@ -30,29 +35,40 @@ app.get("/", function(req, res) {
         var ACase = response.data.total_values.active
         var DCase = response.data.total_values.deaths
         var RCase = response.data.total_values.recovered
-        console.log(response.data.total_values.confirmed)
 
-        var Case = []
-        var ActiveCaseStateWise = []
+
+        var IndianStates = []
+        var Active = []
+        var Death = []
+        var Confirm = []
+        var Recovered = []
         for (const property in statelist) {
 
             var states = `${property}`;
-            Case.push(states)
+            IndianStates.push(states)
+            Active.push(statelist[states].active)
+            Death.push(statelist[states].deaths)
+            Confirm.push(statelist[states].confirmed)
+            Recovered.push(statelist[states].recovered)
         }
-        console.log(Case)
+
+        console.log(statelist)
 
 
 
+        res.render("livecases", {
+            Confirmed: CCase,
+            Active: ACase,
+            Deceased: DCase,
+            Recovered: RCase,
+            State: IndianStates,
+            Confirm1: Confirm,
+            Active1: Active,
+            Death1: Death,
+            Recovered1: Recovered
 
-        // res.render("livecases", {
-        //     Confirmed: CCase,
-        //     Active: ACase,
-        //     Deceased: DCase,
-        //     Recovered: RCase,
-        //     Statelist: Case,
-        //     ActiveCase: ActiveCaseStateWise
 
-        // });
+        });
 
 
     });
