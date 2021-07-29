@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+
+#title {
+    padding: 20px;
+}
+
+.sub-heading {
+    text-align: left;
+    padding-top: 10px;
+}
+
+p {
+    text-align: left;
+    font-size: 20px;
+    color: grey;
+}
+
+.image img {
+    flex: 1 1 40rem;
+    width: 100%;
+}
+
+#protection {
+    padding: 20px;
+}
+
+#protection .heading {
+    padding-bottom: 40px;
+}
+
+.pimage {
+    padding-bottom: 20px;
+}
+
+.row1 {
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.sheading {
+    text-align: center;
+}
+
+.simage {
+    width: 100%;
+}
+
+.preventionimg {
+    width: 100%;
+}
+
+#prevention {
+    padding: 20px;
+}
+
+.preventionimg {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
