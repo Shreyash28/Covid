@@ -1,0 +1,135 @@
+<%- include("header") -%>
+
+    <body>
+        <section>
+            <h1>Total Cases in India </h1>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <h3>Total Cases</h3>
+                    </div>
+                    <div class="col-3">
+                        <h3>Active</h3>
+                    </div>
+                    <div class="col-3">
+                        <h3>Deceased</h3>
+                    </div>
+                    <div class="col-3">
+                        <h3>Recovered</h3>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <p>
+                            <%= Confirmed %>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p>
+                            <%= Active %>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p>
+                            <%= Deceased %>
+                        </p>
+                    </div>
+                    <div class="col-3">
+                        <p>
+                            <%= Recovered %>
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>State Wise</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-1">
+
+                    </div>
+                    <div class="col-2">
+                        <h1>States</h1>
+                    </div>
+                    <div class="col-2">
+                        <h1>Total Cases</h1>
+                    </div>
+                    <div class="col-2">
+                        <h1>Active</h1>
+                    </div>
+                    <div class="col-2">
+                        <h1>Deceased</h1>
+                    </div>
+                    <div class="col-2">
+                        <h1>Recovered</h1>
+                    </div>
+                    <div class="col-1">
+
+                    </div>
+                </div>
+
+            </div>
+            <% for(var i=0;i<State.length-1;i++){ %>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-1">
+
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                <%= State[i] %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                <%= Confirm1[i] %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                <%= Active1[i] %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                <%= Death1[i] %>
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                <%= Recovered1[i] %>
+                            </p>
+                        </div>
+                        <div class="col-1">
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <%  } %>
+
+
+
+
+
+
+        </section>
+
+
+    </body>
+
+
+
+
+
+    <%- include("footer") -%>
