@@ -1,62 +1,120 @@
-body {
-    text-align: center;
-}
-
-#title {
-    padding: 20px;
-}
-
-.sub-heading {
-    text-align: left;
-    padding-top: 10px;
-}
-
-p {
-    text-align: left;
-    font-size: 20px;
-    color: grey;
-}
-
-.image img {
-    flex: 1 1 40rem;
-    width: 100%;
-}
-
-#protection {
-    padding: 20px;
-}
-
-#protection .heading {
-    padding-bottom: 40px;
-}
-
-.pimage {
-    padding-bottom: 20px;
-}
-
-.row1 {
-    padding-bottom: 40px;
-    padding-top: 40px;
-}
-
-.sheading {
-    text-align: center;
-}
-
-.simage {
-    width: 100%;
-}
-
-.preventionimg {
-    width: 100%;
-}
-
-#prevention {
-    padding: 20px;
-}
-
-.preventionimg {
-    position: relative;
-    width: 80%;
-    height: 100%;
-}
+    body {
+        text-align: center;
+        font-family: "archia";
+    }
+    
+    #title {
+        padding: 20px;
+    }
+    
+    .sub-heading {
+        text-align: left;
+        padding-top: 10px;
+    }
+    
+    p {
+        text-align: left;
+        font-size: 20px;
+        color: grey;
+    }
+    
+    .image img {
+        flex: 1 1 40rem;
+        width: 100%;
+    }
+    
+    #protection {
+        padding: 20px;
+    }
+    
+    #protection .heading {
+        padding-bottom: 40px;
+    }
+    
+    .pimage {
+        padding-bottom: 20px;
+    }
+    
+    .row1 {
+        padding-bottom: 40px;
+        padding-top: 40px;
+    }
+    
+    .sheading {
+        text-align: center;
+    }
+    
+    .simage {
+        width: 100%;
+    }
+    
+    .preventionimg {
+        width: 100%;
+    }
+    
+    #prevention {
+        padding: 20px;
+    }
+    
+    .preventionimg {
+        position: relative;
+        width: 80%;
+        height: 100%;
+    }
+    
+    #footer {
+        background: #e23737;
+        height: 300px;
+        font-family: 'Open Sans', sans-serif;
+        color: #FFFFFF;
+        padding: 20px;
+    }
+    
+    #spread {
+        margin: 2rem 2rem;
+    }
+    /* #symptomimg {
+        padding-left: 24rem;
+        margin-top: 2rem;
+    }
+     */
+    
+    #home {
+        width: 50%;
+        height: auto;
+    }
+    
+    #insta {
+        padding-left: 1.25rem;
+    }
+    
+    #footertxt {
+        text-align: center;
+        justify-content: left;
+        padding: 4.5rem
+    }
+    
+    .protectimg {
+        padding-bottom: 2rem;
+    }
+    
+    .protectimg:hover,
+    .protectimg:focus,
+    .protectimg:active {
+        box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+    
+    #tactive {
+        padding: 2rem 0;
+        border-radius: 10%;
+        opacity: 1;
+        background: rgba(0, 123, 255, 0.125);
+    }
+    
+    #tdecease {
+        background-color: rgba(209, 19, 19, 0.925);
+        padding: 2rem 0;
+        border-radius: 10%;
+    }
