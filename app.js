@@ -29,7 +29,6 @@ app.get("/tracker", function(req, res) {
     };
 
     axios.request(options).then(function(response) {
-
         const statelist = response.data.state_wise;
         var CCase = response.data.total_values.confirmed;
         var ACase = response.data.total_values.active
