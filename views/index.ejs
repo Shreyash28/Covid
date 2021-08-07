@@ -1,4 +1,6 @@
 <%- include("header") %>
+    <link rel="stylesheet" href="css/styles.css">
+
     <div class="container-fluid">
 
 
@@ -6,10 +8,11 @@
         <div class="navigation">
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-                    <a class="navbar-brand heading" href="/"><span style="color:red">Covid-19</span></a>
+                    <a class="navbar-brand heading" style="font-size: 140%;
+                " href="/"><span style="color:red">Covid-19</span></a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+          <span class="navbar-toggler-icon"></span>
+        </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
 
@@ -144,18 +147,19 @@
                 <div class="row">
                     <div class="feature-box col-lg-6">
                         <h1>Things <span style="color:red;font-weight:bold">not to do</span> during Covid</h1>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <p class="p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam accumsan sagittis enim, et iaculis eros dictum ac.</p>
-                        <ul>
-                            <li>Do not Share FoodItems</li>
-                            <li>Do not touch your Face or Nose</li>
-                            <li>Do not contact Sick People</li>
-                        </ul>
+                        <div class="list">
+                            <p style="padding-top: 1rem;">● Do not Share FoodItems</p>
+                            <p>● Do not touch your Face or Nose</p>
+                            <p>● Do not contact Sick People</p>
+                            <p>● Do not touch your face
+                            </p>
+                            <p>● Do not stockpile on masks
+                            </p>
+                            <p>● Do not travel unless necessary
+                            </p>
+                            <p>● Do not go to crowded places
+                            </p>
+                        </div>
                     </div>
                     <div class="feature-box col-lg-6">
                         <img src="/images/dont-img.png" class="preventionimg">
@@ -166,26 +170,47 @@
 
         <!-- Prevent Section Ends -->
         <!-- HandWash Section -->
-        <section id="do">
-            <h1>How to <span style="color:red;font-weight:bold">Wash Your Hands</span> Properly?</h1>
-            <span>1</span>
-            <img src="/images/hadnwash-1.png" alt="">
-            <h3>Apply Soap On Hand</h3>
-            <span>2</span>
-            <img src="/images/hadnwash-2.png" alt="">
-            <h3>Palm To Palm</h3>
-            <span>3</span>
-            <img src="/images/hadnwash-3.png" alt="">
-            <h3>Between Fingers</h3>
-            <span>4</span>
-            <img src="/images/hadnwash-4.png" alt="">
-            <h3>Back of the Hands</h3>
-            <span>5</span>
-            <img src="/images/hadnwash-5.png" alt="">
-            <h3>Clean With Water</h3>
-            <span>6</span>
-            <img src="/images/hadnwash-6.png" alt="">
-            <h3>Use Towel to Dry</h3>
+        <section id="handwash">
+            <div class="container-fluid">
+                <h1 class="heading">How to <span style="color:red;font-weight:bold">Wash Your Hands</span> Properly?</h1>
+                <section class="handwashimg">
+                    <div class="row row1">
+                        <div class="feature-box col-lg-4">
+                            <span>1</span>
+                            <img src="/images/hadnwash-1.png" alt="">
+                            <h3>Apply Soap On Hand</h3>
+                        </div>
+                        <div class="feature-box col-lg-4">
+                            <span>2</span>
+                            <img src="/images/hadnwash-2.png" alt="">
+                            <h3>Palm To Palm</h3>
+                        </div>
+                        <div class="feature-box col-lg-4">
+                            <span>3</span>
+                            <img src="/images/hadnwash-3.png" alt="">
+                            <h3>Between Fingers</h3>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="row row2">
+                    <div class="col-lg-4">
+                        <span>4</span>
+                        <img src="/images/hadnwash-4.png" alt="">
+                        <h3>Back of the Hands</h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <span>5</span>
+                        <img src="/images/hadnwash-5.png" alt="">
+                        <h3>Clean With Water</h3>
+                    </div>
+                    <div class="col-lg-4">
+                        <span>6</span>
+                        <img src="/images/hadnwash-6.png" alt="">
+                        <h3>Use Towel to Dry</h3>
+                    </div>
+                </div>
+            </div>
         </section>
         <!-- HandWash Section Ends -->
         <!-- Spread Section -->

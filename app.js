@@ -52,7 +52,7 @@ app.get("/tracker", function(req, res) {
             Recovered.push(statelist[states].recovered)
         }
 
-        console.log(statelist)
+
 
 
 
